@@ -33,6 +33,10 @@ npm-debug.log*
 *.swp
 *.swo
 
+# CSS/SCSS artifacts
+*.css.map
+*.scss.map
+
 # Misc
 *.log
 *.pem
