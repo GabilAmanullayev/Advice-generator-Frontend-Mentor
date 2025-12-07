@@ -1,0 +1,80 @@
+@charset "UTF-8";
+:root {
+  --color-blue-200: hsl(193, 38%, 86%);
+  --color-green-300: hsl(150, 100%, 66%);
+  --color-blue-600: hsl(217, 19%, 38%);
+  --color-blue-900: hsl(217, 19%, 24%);
+  --color-blue-950: hsl(218, 23%, 16%);
+  --font-family: Manrope, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --quote-font-size: 28px;
+  --font-weight-800: 800;
+}
+
+/* Reset: don't center every element — just remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .advice-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 30vh;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.nav .advice-container .title {
+  color: hsl(150, 100%, 66%);
+}
+.nav .advice-container .advice {
+  width: 85%;
+  color: hsl(193, 38%, 86%);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.nav .advice-container .advice::after {
+  content: url(../images/pattern-divider-mobile.svg);
+  padding: 1rem;
+  overflow: hidden;
+}
+.nav .advice-container .dice {
+  position: absolute;
+  left: 50%;
+  bottom: -28px; /* və ya top:50% əgər dikey mərkəzləşdirmək istəyirsinizsə */
+  transform: translateX(-50%);
+  width: 64px;
+  height: 64px;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 100rem;
+  cursor: pointer;
+}
+.nav .advice-container .dice img {
+  width: 50%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.nav .advice-container .dice img:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,18 @@
+{
+  "name": "advice-generator-app",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Advice generator app",
+  "main": "assets/js/app.js",
+  "scripts": {
+    "lint": "eslint assets/js/**/*.js",
+    "lint:fix": "eslint assets/js/**/*.js --fix",
+    "sass": "sass assets/css/styles.scss assets/css/styles.css",
+    "sass:watch": "sass --watch assets/css:assets/css"
+  },
+  "keywords": ["advice", "api", "frontend-mentor"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
