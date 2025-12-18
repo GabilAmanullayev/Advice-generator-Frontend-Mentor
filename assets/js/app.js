@@ -23,7 +23,7 @@ const dice = document.querySelector(".dice");
 // getAdvice();
 async function getAdvice() {
   try {
-    const response = await fetch("https://api.adviceslip.com/advice");
+    const response = await fetch("https://api.adviceslip.com/advice", { cache: "no-cache" });
     if (!response.ok) throw new Error("Network response was not ok");
 
     const data = await response.json();
