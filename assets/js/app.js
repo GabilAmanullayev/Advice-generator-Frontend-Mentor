@@ -35,4 +35,5 @@ async function getAdvice() {
   }
 }
 
+window.onload = getAdvice;
 dice.addEventListener("click", () => { getAdvice(); });
